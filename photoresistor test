@@ -1,0 +1,13 @@
+const int ledPin1 = 13;
+const int photo = 0;
+void setup()
+{
+Serial.begin(9600);
+pinMode(ledPin1, OUTPUT);
+ }
+void loop()
+{
+ digitalWrite(ledPin1, HIGH);
+ Serial.println(analogRead(photo));
+ delay(250);
+}
